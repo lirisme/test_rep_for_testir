@@ -1,6 +1,6 @@
  using System;
 
-namespace MathLibrary
+namespace MathLibrary//очень крутая прога
 {
     public class Calculator
     {
@@ -100,4 +100,31 @@ namespace MathLibrary
             }
         }
     }
+/// <summary>
+/// Вычисляет площадь круга
+/// </summary>
+public static double CircleArea(double radius)
+{
+    if (radius < 0)
+        throw new ArgumentException("Радиус не может быть отрицательным");
+    return Math.PI * radius * radius;
+}
+
+/// <summary>
+/// Конвертирует температуру из Цельсия в Фаренгейт
+/// </summary>
+public static double CelsiusToFahrenheit(double celsius)
+{
+    return celsius * 9 / 5 + 32;
+}
+
+/// <summary>
+/// Вычисляет гипотенузу по двум катетам
+/// </summary>
+public static double Hypotenuse(double a, double b)
+{
+    if (a <= 0 || b <= 0)
+        throw new ArgumentException("Катеты должны быть положительными");
+    return Math.Sqrt(a * a + b * b);
+}
 }
