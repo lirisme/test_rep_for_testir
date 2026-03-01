@@ -2,7 +2,7 @@
 using System;
 using MathLibrary;
 
-namespace MathLibrary.Client
+namespace MathLibrary.Client//блаблабла
 {
     class Program
     {
